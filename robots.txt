@@ -1,4 +1,4 @@
 User-agent: *
 Disallow:
 
-Sitemap: https://www.seusite.com/sitemap.xml
+Sitemap: https://evandrowisky.github.io/sitemap.xml
