@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Consultoria de Dados - Evandro Silva Santos</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.powerbi.com/libs/powerbi-client/2.18.1/powerbi.min.js"></script> <!-- Adicionando o Power BI Client -->
+</head>
+<body>
+    <header>
+        <!-- Logo do canal (movida para a direita) -->
+        <img id="logo" src="https://www.dropbox.com/scl/fi/5rio6p3as4lft634gsu5z/01-Logo-com-variac%20oz-04-1.png?rlkey=k7or7k8h3t31ymdmsgq1adbbp&st=fiizswrn&dl=1" alt="Logo Evandro Silva Santos">
+        <h1>Consultoria em Dados</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#servicos">Serviços</a></li>
+                <li><a href="#sobre">Sobre Mim</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home">
+        <h2>Bem-vindo!</h2>
+        <p>Transforme seus dados em decisões estratégicas com minha consultoria em análise e ciência de dados. Vamos levar seu negócio a outro nível!</p>
+        <!-- Ajuste no botão -->
+        <a href="https://wa.me/5512997383529" class="whatsapp-btn">Entre em contato pelo WhatsApp</a>
+    </section>
+
+    <section id="servicos">
+        <h2>Serviços</h2>
+        <ul>
+            <li><strong>Análise de Dados:</strong> Com a análise de dados, você ganha uma compreensão profunda dos padrões e tendências do seu negócio, permitindo decisões mais assertivas e eficientes. Utilizamos ferramentas avançadas e técnicas de visualização para proporcionar insights claros e acessíveis, facilitando a interpretação de dados complexos.</li>
+            <li><strong>Ciência de Dados:</strong> Desenvolvemos modelos preditivos e aplicamos técnicas de aprendizado de máquina para criar soluções inovadoras e personalizadas para o seu negócio. A ciência de dados oferece a capacidade de antecipar comportamentos, otimizar processos e melhorar resultados, tornando suas operações mais inteligentes e ágeis. Trabalhamos com dados estruturados e não estruturados para trazer soluções que gerem valor contínuo.</li>
+            <li><strong>Automatizações:</strong> Aumente a eficiência da sua empresa com processos automatizados que reduzem erros, economizam tempo e garantem maior produtividade. Desenvolvemos soluções customizadas para automatizar tarefas repetitivas e operacionais, permitindo que você foque nas atividades mais estratégicas. Nossas soluções de automação são adaptáveis, escaláveis e projetadas para atender às necessidades específicas de cada cliente.</li>
+            <li><strong>Planilhas Personalizadas:</strong> Oferecemos o desenvolvimento de planilhas sob medida, criadas para atender de forma exata às suas necessidades. Seja para controle financeiro, gestão de vendas ou planejamento de projetos, nossas planilhas são projetadas para melhorar o fluxo de trabalho, garantir a precisão dos dados e facilitar o acompanhamento de métricas importantes. Garantimos que cada planilha seja intuitiva, eficiente e adaptada ao seu modelo de negócio.</li>
+        </ul>
+    </section>
+
+    <section id="sobre">
+        <img src="https://www.dropbox.com/scl/fi/43178iew2dwc4ra3thhxu/Imagem-do-WhatsApp-de-2024-09-30-s-21.28.03_28007faa.jpg?rlkey=cuourgyj0awrj8xpzgewajwoi&st=ouq0fx13&dl=1" alt="Evandro Silva Santos">
+        <div class="descricao">
+            <h2>Sobre Mim</h2>
+            <p>Presto consultorias há mais de 2 anos, ajudando empresas a tomar decisões estratégicas com base em dados. Atualmente, desempenho o papel de analista de MIS na Foundever, com foco na elaboração de BI's através de métricas e KPIs. Tenho experiência em Power BI, SQL Server, Talend Studio, Excel, VBA e Python, além de trabalhar com requisição de dados via API, Web Scraping, Data Mining e modelagem de dados. Sou formado em Gestão Empresarial pela FATEC, premiado como aluno laureado, e estou cursando MBA em Data Science e Analytics pela USP Esalq. Meu objetivo é continuar a me especializar, ajudando a organização em que trabalho a crescer e se desenvolver.</p>
+
+            <p>Redes sociais:</p>
+            <div class="social-links">
+                <a href="https://www.linkedin.com/in/evandro-silva-santos-256775196/" target="_blank">
+                    <img src="https://www.dropbox.com/scl/fi/2wkrh2mbx5gimqvn7v9ie/4138130.png?rlkey=ebfav7fz12dkcudv1jzzuy80g&st=kundf3t9&dl=1" alt="LinkedIn" width="40">
+                </a>
+                <a href="https://www.youtube.com/channel/evandro-silva-santos-256775196/" target="_blank">
+                    <img src="https://www.dropbox.com/scl/fi/j3juw5vnuf6ipauw7aduy/360_F_300389025_b5hgHpjDprTySl8loTqJRMipySb1rO0I.jpg?rlkey=z6lf1sdvydvfsspwbm8jqek77&st=obf3mw0f&dl=1" alt="YouTube" width="40">
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section id="dashboard">
+        <h2>Meu Dashboard</h2>
+        <iframe title="Dashboard vendas" width="100%" height="600px" src="https://app.powerbi.com/view?r=eyJrIjoiN2JmOTlhY2ItOThmZC00YzIyLWFkYTgtMjg2Y2IxZGZmMTE2IiwidCI6ImNmNzJlMmJkLTdhMmItNDc4My1iZGViLTM5ZDU3YjA3Zjc2ZiIsImMiOjR9" frameborder="0" allowFullScreen="true"></iframe>
+    </section>
+
+    <section id="contato">
+        <h2>Contato</h2>
+        <form action="#" method="post">
+            <div>
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" required>
+            </div>
+
+            <div>
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+
+            <div>
+                <label for="mensagem">Mensagem:</label>
+                <textarea id="mensagem" name="mensagem" rows="4" required></textarea>
+            </div>
+
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Evandro Silva Santos. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
