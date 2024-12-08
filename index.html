@@ -41,19 +41,22 @@
     </section>
 
     <section id="sobre">
-        <img src="https://www.dropbox.com/scl/fi/43178iew2dwc4ra3thhxu/Imagem-do-WhatsApp-de-2024-09-30-s-21.28.03_28007faa.jpg?rlkey=cuourgyj0awrj8xpzgewajwoi&st=ouq0fx13&dl=1" alt="Evandro Silva Santos">
-        <div class="descricao">
-            <h2>Sobre Mim</h2>
-            <p>Presto consultorias há mais de 2 anos, ajudando empresas a tomar decisões estratégicas com base em dados. Atualmente, desempenho o papel de analista de MIS na Foundever, com foco na elaboração de BI's através de métricas e KPIs. Tenho experiência em Power BI, SQL Server, Talend Studio, Excel, VBA e Python, além de trabalhar com requisição de dados via API, Web Scraping, Data Mining e modelagem de dados. Sou formado em Gestão Empresarial pela FATEC, premiado como aluno laureado, e estou cursando MBA em Data Science e Analytics pela USP Esalq. Meu objetivo é continuar a me especializar, ajudando a organização em que trabalho a crescer e se desenvolver.</p>
+        <div class="sobre-container">
+            <!-- Imagem de perfil com tamanho ajustado para dispositivos móveis -->
+            <img src="https://www.dropbox.com/scl/fi/43178iew2dwc4ra3thhxu/Imagem-do-WhatsApp-de-2024-09-30-s-21.28.03_28007faa.jpg?rlkey=cuourgyj0awrj8xpzgewajwoi&st=ouq0fx13&dl=1" alt="Evandro Silva Santos" class="perfil-imagem">
+            <div class="descricao">
+                <h2>Sobre Mim</h2>
+                <p>Presto consultorias há mais de 2 anos, ajudando empresas a tomar decisões estratégicas com base em dados. Atualmente, desempenho o papel de analista de MIS na Foundever, com foco na elaboração de BI's através de métricas e KPIs. Tenho experiência em Power BI, SQL Server, Talend Studio, Excel, VBA e Python, além de trabalhar com requisição de dados via API, Web Scraping, Data Mining e modelagem de dados. Sou formado em Gestão Empresarial pela FATEC, premiado como aluno laureado, e estou cursando MBA em Data Science e Analytics pela USP Esalq. Meu objetivo é continuar a me especializar, ajudando a organização em que trabalho a crescer e se desenvolver.</p>
 
-            <p>Redes sociais:</p>
-            <div class="social-links">
-                <a href="https://www.linkedin.com/in/evandro-silva-santos-256775196/" target="_blank">
-                    <img src="https://www.dropbox.com/scl/fi/2wkrh2mbx5gimqvn7v9ie/4138130.png?rlkey=ebfav7fz12dkcudv1jzzuy80g&st=kundf3t9&dl=1" alt="LinkedIn" width="40">
-                </a>
-                <a href="https://www.youtube.com/channel/evandro-silva-santos-256775196/" target="_blank">
-                    <img src="https://www.dropbox.com/scl/fi/j3juw5vnuf6ipauw7aduy/360_F_300389025_b5hgHpjDprTySl8loTqJRMipySb1rO0I.jpg?rlkey=z6lf1sdvydvfsspwbm8jqek77&st=obf3mw0f&dl=1" alt="YouTube" width="40">
-                </a>
+                <p>Redes sociais:</p>
+                <div class="social-links">
+                    <a href="https://www.linkedin.com/in/evandro-silva-santos-256775196/" target="_blank">
+                        <img src="https://www.dropbox.com/scl/fi/2wkrh2mbx5gimqvn7v9ie/4138130.png?rlkey=ebfav7fz12dkcudv1jzzuy80g&st=kundf3t9&dl=1" alt="LinkedIn" width="40">
+                    </a>
+                    <a href="https://www.youtube.com/channel/evandro-silva-santos-256775196/" target="_blank">
+                        <img src="https://www.dropbox.com/scl/fi/j3juw5vnuf6ipauw7aduy/360_F_300389025_b5hgHpjDprTySl8loTqJRMipySb1rO0I.jpg?rlkey=z6lf1sdvydvfsspwbm8jqek77&st=obf3mw0f&dl=1" alt="YouTube" width="40">
+                    </a>
+                </div>
             </div>
         </div>
     </section>
@@ -65,7 +68,8 @@
 
     <section id="contato">
         <h2>Contato</h2>
-        <form action="#" method="post">
+        <!-- Formulário configurado para enviar via Formspree -->
+        <form id="form-contato" action="https://formspree.io/f/meoqwejd" method="POST" onsubmit="showConfirmation(); return false;">
             <div>
                 <label for="nome">Nome:</label>
                 <input type="text" id="nome" name="nome" required>
@@ -83,10 +87,32 @@
 
             <button type="submit">Enviar</button>
         </form>
+
+        <!-- Mensagem de confirmação -->
+        <div id="confirmation-message" style="display: none;">
+            <p>Obrigado pelo envio! Sua mensagem foi recebida.</p>
+        </div>
     </section>
 
     <footer>
         <p>&copy; 2024 Evandro Silva Santos. Todos os direitos reservados.</p>
     </footer>
+
+    <!-- JavaScript para exibir a confirmação -->
+    <script>
+        // Função para mostrar a mensagem de confirmação e redirecionar após 5 segundos
+        function showConfirmation() {
+            // Esconde o formulário
+            document.getElementById("form-contato").style.display = "none";
+
+            // Exibe a mensagem de confirmação
+            document.getElementById("confirmation-message").style.display = "block";
+
+            // Após 5 segundos, recarrega a página ou redireciona para outro lugar
+            setTimeout(function() {
+                window.location.href = window.location.href; // Recarrega a página atual
+            }, 5000); // 5 segundos
+        }
+    </script>
 </body>
 </html>
