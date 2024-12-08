@@ -20,9 +20,9 @@ header {
 #logo {
     position: absolute;
     top: 15px;
-    right: 20px;  /* Ajuste para a direita */
-    width: 50px;  /* Tamanho original da logo */
-    height: 50px; /* Tamanho original da logo */
+    right: 20px;
+    width: 50px;
+    height: 50px;
 }
 
 header h1 {
@@ -138,8 +138,8 @@ section#servicos li strong {
 
 #sobre img {
     border-radius: 50%;
-    width: 100px; /* Tamanho ajustado da imagem */
-    height: 100px; /* Tamanho ajustado da imagem */
+    width: 100px;  /* Ajustado para imagem pequena */
+    height: 100px; /* Ajustado para imagem pequena */
     margin-right: 20px;
 }
 
@@ -222,4 +222,27 @@ iframe {
     height: 500px;
     border: none;
     border-radius: 8px;
+}
+
+/* Responsividade: Imagens */
+@media (max-width: 768px) {
+    #sobre {
+        flex-direction: column; /* Organiza o layout de forma vertical */
+        align-items: center;
+    }
+
+    #sobre img {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+}
+
+/* Estilo da mensagem de confirmação */
+#confirmation-message {
+    background-color: #4CAF50; /* Cor de fundo verde */
+    color: white;
+    padding: 10px;
+    margin-top: 20px;
+    border-radius: 5px;
+    text-align: center;
 }
