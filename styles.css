@@ -237,7 +237,7 @@ iframe {
     }
 }
 
-/* Estilo da mensagem de confirmação */
+/* Estilo da mensagem de aguardo */
 #confirmation-message {
     background-color: #4CAF50; /* Cor de fundo verde */
     color: white;
