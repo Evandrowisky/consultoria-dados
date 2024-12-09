@@ -1,129 +1,248 @@
-<!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Consultoria de Dados - Evandro Silva Santos</title>
+/* Geral */
+body {
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f6f7;
+    color: #333;
+    line-height: 1.6;
+}
 
-    <!-- Google Analytics 4 (GA4) Tracking Code -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-3V0G42NBNT"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
+header {
+    background: #2c3e50;
+    color: white;
+    padding: 1rem 2rem;
+    text-align: left;
+    position: relative;
+}
 
-      gtag('config', 'G-3V0G42NBNT');
-    </script>
+/* Logo movida para a direita */
+#logo {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+}
 
-    <link rel="stylesheet" href="styles.css">
-    <script src="https://cdn.powerbi.com/libs/powerbi-client/2.18.1/powerbi.min.js"></script>
-</head>
-<body>
-    <header>
-        <!-- Logo do canal (movida para a direita) -->
-        <img id="logo" src="https://www.dropbox.com/scl/fi/5rio6p3as4lft634gsu5z/01-Logo-com-variac%20oz-04-1.png?rlkey=k7or7k8h3t31ymdmsgq1adbbp&st=fiizswrn&dl=1" alt="Logo Evandro Silva Santos">
-        <h1>Evandro Silva Santos - Consultoria em Dados</h1>
-        <nav>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#servicos">Serviços</a></li>
-                <li><a href="#sobre">Sobre Mim</a></li>
-                <li><a href="#contato">Contato</a></li>
-            </ul>
-        </nav>
-    </header>
+header h1 {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 30px;
+}
 
-    <section id="home">
-        <h2>Bem-vindo!</h2>
-        <p>Transforme seus dados em decisões estratégicas com minha consultoria em análise e ciência de dados. Vamos levar seu negócio a outro nível!</p>
-        <a href="https://wa.me/5512997383529" class="whatsapp-btn">Entre em contato pelo WhatsApp</a>
-    </section>
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 10px;
+}
 
-    <section id="servicos">
-        <h2>Serviços</h2>
-        <ul>
-            <li><strong>Análise de Dados:</strong> Com a análise de dados, você ganha uma compreensão profunda dos padrões e tendências do seu negócio, permitindo decisões mais assertivas e eficientes. Utilizamos ferramentas avançadas e técnicas de visualização para proporcionar insights claros e acessíveis, facilitando a interpretação de dados complexos.</li>
-            <li><strong>Ciência de Dados:</strong> Desenvolvemos modelos preditivos e aplicamos técnicas de aprendizado de máquina para criar soluções inovadoras e personalizadas para o seu negócio. A ciência de dados oferece a capacidade de antecipar comportamentos, otimizar processos e melhorar resultados, tornando suas operações mais inteligentes e ágeis. Trabalhamos com dados estruturados e não estruturados para trazer soluções que gerem valor contínuo.</li>
-            <li><strong>Automatizações:</strong> Aumente a eficiência da sua empresa com processos automatizados que reduzem erros, economizam tempo e garantem maior produtividade. Desenvolvemos soluções customizadas para automatizar tarefas repetitivas e operacionais, permitindo que você foque nas atividades mais estratégicas. Nossas soluções de automação são adaptáveis, escaláveis e projetadas para atender às necessidades específicas de cada cliente.</li>
-            <li><strong>Planilhas Personalizadas:</strong> Oferecemos o desenvolvimento de planilhas sob medida, criadas para atender de forma exata às suas necessidades. Seja para controle financeiro, gestão de vendas ou planejamento de projetos, nossas planilhas são projetadas para melhorar o fluxo de trabalho, garantir a precisão dos dados e facilitar o acompanhamento de métricas importantes. Garantimos que cada planilha seja intuitiva, eficiente e adaptada ao seu modelo de negócio.</li>
-        </ul>
-    </section>
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
 
-    <section id="sobre">
-        <div class="sobre-container">
-            <img src="https://www.dropbox.com/scl/fi/43178iew2dwc4ra3thhxu/Imagem-do-WhatsApp-de-2024-09-30-s-21.28.03_28007faa.jpg?rlkey=cuourgyj0awrj8xpzgewajwoi&st=ouq0fx13&dl=1" alt="Evandro Silva Santos" class="perfil-imagem">
-            <div class="descricao">
-                <h2>Sobre Mim</h2>
-                <p>Presto consultorias há mais de 2 anos, ajudando empresas a tomar decisões estratégicas com base em dados. Atualmente, desempenho o papel de analista de MIS na Foundever, com foco na elaboração de BI's através de métricas e KPIs. Tenho experiência em Power BI, SQL Server, Talend Studio, Excel, VBA e Python, além de trabalhar com requisição de dados via API, Web Scraping, Data Mining e modelagem de dados. Sou formado em Gestão Empresarial pela FATEC, premiado como aluno laureado, e estou cursando MBA em Data Science e Analytics pela USP Esalq. Meu objetivo é continuar a me especializar, ajudando a organização em que trabalho a crescer e se desenvolver.</p>
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 16px;
+}
 
-                <p>Redes sociais:</p>
-                <div class="social-links">
-                    <a href="https://www.linkedin.com/in/evandro-silva-santos-256775196/" target="_blank">
-                        <img src="https://www.dropbox.com/scl/fi/2wkrh2mbx5gimqvn7v9ie/4138130.png?rlkey=ebfav7fz12dkcudv1jzzuy80g&st=kundf3t9&dl=1" alt="LinkedIn" width="40">
-                    </a>
-                    <a href="https://www.youtube.com/channel/evandro-silva-santos-256775196/" target="_blank">
-                        <img src="https://www.dropbox.com/scl/fi/j3juw5vnuf6ipauw7aduy/360_F_300389025_b5hgHpjDprTySl8loTqJRMipySb1rO0I.jpg?rlkey=z6lf1sdvydvfsspwbm8jqek77&st=obf3mw0f&dl=1" alt="YouTube" width="40">
-                    </a>
-                </div>
-            </div>
-        </div>
-    </section>
+nav ul li a:hover {
+    text-decoration: underline;
+}
 
-    <section id="dashboard">
-        <h2>Análise de vendas</h2>
-        <!-- Dashboard Vendas -->
-        <iframe title="Dashboard vendas" width="100%" height="600px" src="https://app.powerbi.com/view?r=eyJrIjoiN2JmOTlhY2ItOThmZC00YzIyLWFkYTgtMjg2Y2IxZGZmMTE2IiwidCI6ImNmNzJlMmJkLTdhMmItNDc4My1iZGViLTM5ZDU3YjA3Zjc2ZiIsImMiOjR9" frameborder="0" allowFullScreen="true"></iframe>
+/* Seções */
+section {
+    padding: 2rem;
+    margin: 1rem 0;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
 
-        <!-- Dashboard LinkedIn -->
-        <h3>Análise LinkedIn</h3>
-        <iframe title="Dashboard LinkedIn" width="100%" height="600px"
-            src="https://app.powerbi.com/view?r=eyJrIjoiMmFkMDlhZjMtMGE3Ny00ZmIxLTk3ZWUtYzQyOTg5NGU5NmU0IiwidCI6ImNmNzJlMmJkLTdhMmItNDc4My1iZGViLTM5ZDU3YjA3Zjc2ZiIsImMiOjR9"
-            frameborder="0" allowFullScreen="true"></iframe>
+section#home {
+    background-color: #ecf0f1;
+    text-align: center;
+}
 
-        <!-- Dashboard RH -->
-        <h3>Análise RH</h3>
-        <iframe title="Análise RH" width="100%" height="600px"
-            src="https://app.powerbi.com/view?r=eyJrIjoiODIzMjY3ZmQtMWIxMS00ODJmLThhY2UtMTM4ZmE1YzVlN2FhIiwidCI6ImNmNzJlMmJkLTdhMmItNDc4My1iZGViLTM5ZDU3YjA3Zjc2ZiIsImMiOjR9"
-            frameborder="0" allowFullScreen="true"></iframe>
-    </section>
+section#home h2 {
+    color: #34495e;
+    font-family: 'Roboto', sans-serif;
+    font-size: 28px;
+    font-weight: 500;
+}
 
-    <section id="contato">
-        <h2>Contato</h2>
-        <form id="form-contato" action="https://formspree.io/f/meoqwejd" method="POST" onsubmit="showConfirmation();">
-            <div>
-                <label for="nome">Nome:</label>
-                <input type="text" id="nome" name="nome" required>
-            </div>
+/* Ajustes no botão do WhatsApp */
+.whatsapp-btn {
+    display: inline-block;
+    background: #25D366;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    margin-top: 20px;
+}
 
-            <div>
-                <label for="email">E-mail:</label>
-                <input type="email" id="email" name="email" required>
-            </div>
+.whatsapp-btn:hover {
+    background: #20b358;
+}
 
-            <div>
-                <label for="mensagem">Mensagem:</label>
-                <textarea id="mensagem" name="mensagem" rows="4" required></textarea>
-            </div>
+/* Títulos */
+h2, h3 {
+    color: #2c3e50;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    text-transform: uppercase;
+    border-bottom: 2px solid #3498db;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    font-size: 22px;
+}
 
-            <button type="submit">Enviar</button>
-        </form>
+/* Servicos */
+section#servicos ul {
+    padding: 0;
+    list-style: none;
+}
 
-        <div id="confirmation-message" style="display: none;">
-            <p>Aguarde, sua mensagem está sendo processada...</p>
-        </div>
-    </section>
+section#servicos ul li {
+    margin-bottom: 1rem;
+    padding-left: 20px;
+    position: relative;
+}
 
-    <footer>
-        <p>&copy; 2024 Evandro Silva Santos. Todos os direitos reservados.</p>
-    </footer>
+section#servicos ul li::before {
+    content: '•';
+    position: absolute;
+    left: 0;
+    color: #3498db;
+    font-size: 22px;
+    top: 5px;
+}
 
-    <script>
-        // Função para mostrar a mensagem de aguardo
-        function showConfirmation() {
-            // Exibe a mensagem de aguardo
-            document.getElementById("confirmation-message").style.display = "block";
-        }
-    </script>
-</body>
-</html>
+section#servicos li strong {
+    font-weight: bold;
+}
+
+/* Sobre Mim */
+#sobre {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    background: #f4f6f7;
+}
+
+#sobre img {
+    border-radius: 50%;
+    width: 100px;  /* Ajustado para imagem pequena */
+    height: 100px; /* Ajustado para imagem pequena */
+    margin-right: 20px;
+}
+
+#sobre .descricao {
+    max-width: 600px;
+}
+
+#sobre .descricao h2 {
+    margin-bottom: 1rem;
+}
+
+#sobre .descricao a {
+    text-decoration: none;
+    color: #2c3e50;
+}
+
+#sobre .descricao a:hover {
+    text-decoration: underline;
+}
+
+/* Contato */
+form div {
+    margin-bottom: 15px;
+}
+
+form label {
+    display: block;
+    font-weight: bold;
+}
+
+form input,
+form textarea,
+form button {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+form button {
+    background-color: #3498db;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+form button:hover {
+    background-color: #2980b9;
+}
+
+/* Rodapé */
+footer {
+    background-color: #2c3e50;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+}
+
+/* Redes sociais */
+.social-links a {
+    margin: 0 15px;
+    display: inline-block;
+    font-size: 20px;
+    color: #3498db;
+}
+
+.social-links a:hover {
+    color: #2980b9;
+}
+
+/* Power BI Embed */
+#embedContainer {
+    margin-top: 20px;
+}
+
+iframe {
+    width: 100%;
+    height: 500px;
+    border: none;
+    border-radius: 8px;
+}
+
+/* Responsividade: Imagens */
+@media (max-width: 768px) {
+    #sobre {
+        flex-direction: column; /* Organiza o layout de forma vertical */
+        align-items: center;
+    }
+
+    #sobre img {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+}
+
+/* Estilo da mensagem de aguardo */
+#confirmation-message {
+    background-color: #4CAF50; /* Cor de fundo verde */
+    color: white;
+    padding: 10px;
+    margin-top: 20px;
+    border-radius: 5px;
+    text-align: center;
+}
