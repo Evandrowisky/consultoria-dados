@@ -102,7 +102,7 @@ h2, h3 {
     font-size: 22px;
 }
 
-/* Servicos */
+/* Serviços */
 section#servicos ul {
     padding: 0;
     list-style: none;
@@ -245,4 +245,57 @@ iframe {
     margin-top: 20px;
     border-radius: 5px;
     text-align: center;
+}
+
+/* Seção Clientes */
+section#clientes {
+    padding: 2rem;
+    background-color: #ffffff; /* Cor de fundo branca */
+    text-align: center;
+}
+
+section#clientes h2 {
+    color: #2c3e50;
+    font-size: 24px;
+    margin-bottom: 1.5rem;
+    border-bottom: 2px solid #3498db;
+    display: inline-block;
+    padding-bottom: 10px;
+}
+
+.clientes-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.cliente {
+    flex: 1 1 150px; /* Flexível para ajustar o tamanho */
+    max-width: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    background-color: #f4f6f7;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.cliente img {
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+/* Responsividade para a Seção Clientes */
+@media (max-width: 768px) {
+    .clientes-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .cliente {
+        max-width: 200px;
+    }
 }
