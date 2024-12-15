@@ -8,75 +8,22 @@ body {
     line-height: 1.6;
 }
 
-/* Estilo básico */
 header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 20px;
-    background-color: #333;
+    background: #2c3e50;
     color: white;
+    padding: 1rem 2rem;
+    text-align: left;
+    position: relative;
 }
 
+/* Logo movida para a direita */
 #logo {
-    width: 100px;
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
 }
-
-.nav-list {
-    display: flex;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-}
-
-.nav-list li {
-    margin: 0 10px;
-}
-
-.nav-list a {
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-    font-size: 18px;
-}
-
-.mobile-menu {
-    display: none;
-    cursor: pointer;
-}
-
-.mobile-menu div {
-    width: 25px;
-    height: 3px;
-    background-color: white;
-    margin: 5px;
-    transition: all 0.3s ease;
-}
-
-/* Responsividade */
-@media (max-width: 425px) {
-    .nav-list {
-        display: none;
-        flex-direction: column;
-        background-color: #2c3e50;
-        position: absolute;
-        top: 10rem;
-        right: 0;
-        width: 100%;
-        text-align: center;
-    }
-
-    .nav-list.active {
-        display: flex;
-        gap: 11px;
-        height: 15rem;
-    }
-
-    .mobile-menu {
-        display: block;
-    }
-}
-
 
 header h1 {
     margin: 0;
