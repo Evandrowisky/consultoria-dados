@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex,nofollow">
+    <meta name="theme-color" content="#08111f">
+    <title>Painel interno de métricas | O Cientista dos Dados</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="site-features.css">
+    <link rel="stylesheet" href="conversion.css">
+</head>
+<body>
+    <div class="background-glow" aria-hidden="true"></div>
+
+    <header class="site-header">
+        <div class="container header-content">
+            <a class="brand" href="index.html#home" aria-label="Voltar ao site">
+                <span class="brand-mark" aria-hidden="true">CD</span>
+                <span class="brand-text"><strong>Painel interno</strong><small>Métricas do site</small></span>
+            </a>
+            <nav aria-label="Menu interno">
+                <ul class="nav-list">
+                    <li><a href="index.html#home">Site público</a></li>
+                    <li><a href="https://analytics.google.com/" target="_blank" rel="noopener" class="nav-cta">Abrir GA4</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="section analytics-section soft-section">
+            <div class="container">
+                <div class="section-heading center">
+                    <span class="kicker">Uso interno</span>
+                    <h1>Eventos para acompanhar no Google Analytics</h1>
+                    <p>Essa página não aparece no menu público. Ela serve como guia para você acompanhar campanhas, anúncios e conversões no GA4.</p>
+                </div>
+
+                <div class="analytics-grid">
+                    <article class="analytics-panel">
+                        <h3>Eventos enviados pelo site</h3>
+                        <div class="metric-cards">
+                            <div class="metric-card"><strong>page_view</strong><span>Visitas e visualizações de página.</span></div>
+                            <div class="metric-card"><strong>site_loaded</strong><span>Carregamento do site.</span></div>
+                            <div class="metric-card"><strong>whatsapp_click</strong><span>Clique nos botões de WhatsApp.</span></div>
+                            <div class="metric-card"><strong>section_navigation</strong><span>Navegação no menu do site.</span></div>
+                            <div class="metric-card"><strong>contact_form_submit</strong><span>Envio do formulário de orçamento.</span></div>
+                            <div class="metric-card"><strong>review_submit</strong><span>Envio de avaliação na página de reviews.</span></div>
+                        </div>
+                    </article>
+
+                    <aside class="analytics-list">
+                        <h3>Como analisar</h3>
+                        <ul>
+                            <li>No GA4, vá em Relatórios, Engajamento e Eventos.</li>
+                            <li>Marque whatsapp_click como conversão se quiser medir leads.</li>
+                            <li>Compare page_view com whatsapp_click para ver taxa de interesse.</li>
+                            <li>Use UTMs nos anúncios para saber qual campanha gerou contato.</li>
+                            <li>Reviews continuam públicos; métricas ficam só no GA4.</li>
+                        </ul>
+                        <div class="analytics-note">Observação: esta página é apenas não indexada e não linkada. Para senha real, use proteção no Vercel ou uma área logada.</div>
+                    </aside>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer><div class="container footer-content"><p>&copy; 2026 O Cientista dos Dados — uso interno.</p><a href="index.html#home">Voltar ao site</a></div></footer>
+</body>
+</html>
