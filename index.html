@@ -4,7 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Consultoria de Dados - Evandro Silva Santos</title>
+    <meta name="description" content="Consultoria em dados, Power BI, SQL, Python, automações e planilhas personalizadas para transformar informações em decisões de negócio.">
+    <meta name="theme-color" content="#0f172a">
+    <title>Consultoria em Dados, Power BI e Automações | Evandro Silva Santos</title>
 
     <!-- Google Analytics 4 (GA4) Tracking Code -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-3V0G42NBNT"></script>
@@ -12,169 +14,398 @@
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
-
       gtag('config', 'G-3V0G42NBNT');
     </script>
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
-    <script src="https://cdn.powerbi.com/libs/powerbi-client/2.18.1/powerbi.min.js"></script>
 </head>
 <body>
-    <header>
-        <!-- Logo do canal -->
-        <img id="logo" src="https://res.cloudinary.com/dakabdlip/image/upload/v1734208687/01_-_Logo_com_variac%C3%A3oz-04_1_1_kwmktv.png" alt="Logo Evandro Silva Santos">
-        <h1>Evandro Silva Santos - Consultoria em Dados</h1>
-        <nav id="menu">
-            <div class="mobile-menu">
-                <div class="line1"></div>
-                <div class="line2"></div>
-                <div class="line3"></div>
-            </div>
-            <ul class="nav-list">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#servicos">Serviços</a></li>
-                <li><a href="#dashboard">Análises</a></li>
-                <li><a href="#sobre">Sobre Mim</a></li>
-                <li><a href="#clientes">Clientes</a></li>
-                <li><a href="#contato">Contato</a></li>
-            </ul>
-        </nav>
+    <header class="site-header">
+        <div class="container header-content">
+            <a class="brand" href="#home" aria-label="Ir para o início">
+                <img id="logo" src="https://res.cloudinary.com/dakabdlip/image/upload/v1734208687/01_-_Logo_com_variac%C3%A3oz-04_1_1_kwmktv.png" alt="Logo Evandro Silva Santos">
+                <span>
+                    <strong>Evandro Silva Santos</strong>
+                    <small>Consultoria em Dados</small>
+                </span>
+            </a>
+
+            <nav id="menu" aria-label="Menu principal">
+                <button class="mobile-menu" type="button" aria-label="Abrir menu">
+                    <span class="line1"></span>
+                    <span class="line2"></span>
+                    <span class="line3"></span>
+                </button>
+                <ul class="nav-list">
+                    <li><a href="#servicos">Serviços</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projetos">Projetos</a></li>
+                    <li><a href="#dashboard">Dashboards</a></li>
+                    <li><a href="#sobre">Sobre</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
-    <section id="home">
-        <h2>Bem-vindo!</h2>
-        <p>Transforme seus dados em decisões estratégicas com minha consultoria em análise e ciência de dados. Vamos levar seu negócio a outro nível!</p>
-        <a href="https://wa.me/5512997383529" class="whatsapp-btn">Entre em contato pelo WhatsApp</a>
-    </section>
+    <main>
+        <section id="home" class="hero">
+            <div class="container hero-grid">
+                <div class="hero-copy">
+                    <p class="eyebrow">Power BI • SQL • Python • Automações • Planilhas</p>
+                    <h1>Dados claros para decisões melhores, processos mais rápidos e negócios mais profissionais.</h1>
+                    <p class="hero-description">
+                        Eu ajudo empresas, profissionais autônomos e pequenos negócios a organizar dados, criar dashboards, automatizar rotinas e transformar planilhas bagunçadas em soluções simples de usar.
+                    </p>
 
-    <section id="servicos">
-        <h2>Serviços</h2>
-        <ul>
-            <li><strong>Análise de Dados:</strong> Com a análise de dados, você ganha uma compreensão profunda dos padrões e tendências do seu negócio, permitindo decisões mais assertivas e eficientes. Utilizamos ferramentas avançadas e técnicas de visualização para proporcionar insights claros e acessíveis, facilitando a interpretação de dados complexos.</li>
-            <li><strong>Ciência de Dados:</strong> Desenvolvemos modelos preditivos e aplicamos técnicas de aprendizado de máquina para criar soluções inovadoras e personalizadas para o seu negócio. A ciência de dados oferece a capacidade de antecipar comportamentos, otimizar processos e melhorar resultados, tornando suas operações mais inteligentes e ágeis. Trabalhamos com dados estruturados e não estruturados para trazer soluções que gerem valor contínuo.</li>
-            <li><strong>Automatizações:</strong> Aumente a eficiência da sua empresa com processos automatizados que reduzem erros, economizam tempo e garantem maior produtividade. Desenvolvemos soluções customizadas para automatizar tarefas repetitivas e operacionais, permitindo que você foque nas atividades mais estratégicas. Nossas soluções de automação são adaptáveis, escaláveis e projetadas para atender às necessidades específicas de cada cliente.</li>
-            <li><strong>Planilhas Personalizadas:</strong> Oferecemos o desenvolvimento de planilhas sob medida, criadas para atender de forma exata às suas necessidades. Seja para controle financeiro, gestão de vendas ou planejamento de projetos, nossas planilhas são projetadas para melhorar o fluxo de trabalho, garantir a precisão dos dados e facilitar o acompanhamento de métricas importantes. Garantimos que cada planilha seja intuitiva, eficiente e adaptada ao seu modelo de negócio.</li>
-        </ul>
-    </section>
+                    <div class="hero-actions">
+                        <a href="https://wa.me/5512997383529?text=Ol%C3%A1%2C%20Evandro!%20Quero%20falar%20sobre%20uma%20consultoria%20em%20dados." class="btn btn-primary" target="_blank" rel="noopener">Falar no WhatsApp</a>
+                        <a href="#projetos" class="btn btn-secondary">Ver projetos</a>
+                    </div>
 
-    <section id="dashboard">
-        <h2>Análise de Vendas</h2>
-        <!-- Dashboard Vendas -->
-        <iframe title="Dashboard vendas" width="100%" height="600px" src="https://app.powerbi.com/view?r=eyJrIjoiN2JmOTlhY2ItOThmZC00YzIyLWFkYTgtMjg2Y2IxZGZmMTE2IiwidCI6ImNmNzJlMmJkLTdhMmItNDc4My1iZGViLTM5ZDU3YjA3Zjc2ZiIsImMiOjR9" frameborder="0" allowFullScreen="true"></iframe>
+                    <div class="hero-metrics" aria-label="Destaques profissionais">
+                        <div>
+                            <strong>+2 anos</strong>
+                            <span>em consultorias e soluções de dados</span>
+                        </div>
+                        <div>
+                            <strong>BI + Dados</strong>
+                            <span>dashboards, ETL, automações e KPIs</span>
+                        </div>
+                        <div>
+                            <strong>USP + FATEC</strong>
+                            <span>MBA em Data Science e Gestão Empresarial</span>
+                        </div>
+                    </div>
+                </div>
 
-        <!-- Dashboard LinkedIn -->
-        <h3>Análise LinkedIn</h3>
-        <iframe title="Dashboard LinkedIn" width="100%" height="600px"
-            src="https://app.powerbi.com/view?r=eyJrIjoiMmFkMDlhZjMtMGE3Ny00ZmIxLTk3ZWUtYzQyOTg5NGU5NmU0IiwidCI6ImNmNzJlMmJkLTdhMmItNDc4My1iZGViLTM5ZDU3YjA3Zjc2ZiIsImMiOjR9"
-            frameborder="0" allowFullScreen="true"></iframe>
+                <aside class="hero-panel" aria-label="Principais entregas">
+                    <div class="panel-header">
+                        <span class="status-dot"></span>
+                        <p>Como posso ajudar</p>
+                    </div>
+                    <ul class="solution-list">
+                        <li><strong>Dashboards executivos</strong><span>Power BI com KPIs, filtros, metas e visão gerencial.</span></li>
+                        <li><strong>Planilhas inteligentes</strong><span>Controles financeiros, vendas, estoque, comissões e relatórios.</span></li>
+                        <li><strong>Automações</strong><span>Python, VBA, APIs e rotinas que reduzem trabalho manual.</span></li>
+                        <li><strong>Banco de dados e ETL</strong><span>SQL, modelagem, tratamento, integração e qualidade dos dados.</span></li>
+                    </ul>
+                </aside>
+            </div>
+        </section>
 
-        <!-- Dashboard RH -->
-        <h3>Análise RH</h3>
-        <iframe title="Análise RH" width="100%" height="600px"
-            src="https://app.powerbi.com/view?r=eyJrIjoiODIzMjY3ZmQtMWIxMS00ODJmLThhY2UtMTM4ZmE1YzVlN2FhIiwidCI6ImNmNzJlMmJkLTdhMmItNDc4My1iZGViLTM5ZDU3YjA3Zjc2ZiIsImMiOjR9"
-            frameborder="0" allowFullScreen="true"></iframe>
-    </section>
+        <section id="servicos" class="section">
+            <div class="container">
+                <div class="section-heading">
+                    <p class="eyebrow">Serviços</p>
+                    <h2>Soluções de dados sob medida para o seu cenário</h2>
+                    <p>Do Excel ao Power BI, do SQL à automação: a ideia é entregar algo bonito, funcional e que resolva problema real.</p>
+                </div>
 
-    <section id="sobre">
-        <div class="sobre-container">
-            <img src="https://res.cloudinary.com/dakabdlip/image/upload/v1734208687/Imagem_do_WhatsApp_de_2024-09-30_%C3%A0_s_21.28.03_28007faa_1_zlnw8i.jpg" alt="Evandro Silva Santos" class="perfil-imagem">
-            <div class="descricao">
-                <h2>Sobre Mim</h2>
-                <p>Presto consultorias há mais de 2 anos, ajudando empresas a tomar decisões estratégicas com base em dados. Atualmente, desempenho o papel de analista de MIS na Foundever, com foco na elaboração de BI's através de métricas e KPIs. Tenho experiência em Power BI, SQL Server, Talend Studio, Excel, VBA e Python, além de trabalhar com requisição de dados via API, Web Scraping, Data Mining e modelagem de dados. Sou formado em Gestão Empresarial pela FATEC, premiado como aluno laureado, e estou cursando MBA em Data Science e Analytics pela USP Esalq. Meu objetivo é continuar a me especializar, ajudando a organização em que trabalho a crescer e se desenvolver.</p>
-
-                <p>Redes sociais:</p>
-                <div class="social-links">
-                    <a href="https://www.linkedin.com/in/evandro-silva-santos-256775196/" target="_blank">
-                        <img src="https://res.cloudinary.com/dakabdlip/image/upload/v1734208687/4138130_1_rirbmc.png" alt="LinkedIn" width="40">
-                    </a>
-                    <a href="https://www.youtube.com/channel/evandro-silva-santos-256775196/" target="_blank">
-                        <img src="https://res.cloudinary.com/dakabdlip/image/upload/v1734208687/360_F_300389025_b5hgHpjDprTySl8loTqJRMipySb1rO0I_1_zehwc1.jpg" alt="YouTube" width="40">
-                    </a>
+                <div class="cards-grid services-grid">
+                    <article class="card">
+                        <span class="card-icon">📊</span>
+                        <h3>Dashboards em Power BI</h3>
+                        <p>Criação de painéis para vendas, financeiro, operações, RH, produtividade, funil comercial e indicadores executivos.</p>
+                    </article>
+                    <article class="card">
+                        <span class="card-icon">⚙️</span>
+                        <h3>Automação de processos</h3>
+                        <p>Rotinas em Python, VBA e integrações por API para economizar tempo, padronizar relatórios e diminuir erros manuais.</p>
+                    </article>
+                    <article class="card">
+                        <span class="card-icon">🧾</span>
+                        <h3>Planilhas personalizadas</h3>
+                        <p>Planilhas profissionais para controle financeiro, clientes, agenda, estoque, condomínio, comissões e acompanhamento de metas.</p>
+                    </article>
+                    <article class="card">
+                        <span class="card-icon">🗄️</span>
+                        <h3>SQL, ETL e modelagem</h3>
+                        <p>Tratamento, cruzamento e organização de bases em SQL Server, Oracle, Excel, Google Sheets e arquivos diversos.</p>
+                    </article>
+                    <article class="card">
+                        <span class="card-icon">🤖</span>
+                        <h3>Ciência de dados e IA</h3>
+                        <p>Análises preditivas, segmentações, rankings, modelos simples de scoring e uso de IA para apoiar decisões.</p>
+                    </article>
+                    <article class="card">
+                        <span class="card-icon">🌐</span>
+                        <h3>Aplicações web com dados</h3>
+                        <p>Sistemas simples com login, dashboards, relatórios, APIs, banco de dados e publicação em ambiente online.</p>
+                    </article>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Seção Clientes -->
-    <section id="clientes">
-        <h2>Nossos Clientes</h2>
-        <div class="clientes-container">
-            <!-- Cliente 1: Karbi -->
-            <div class="cliente">
-                <img src="https://cdn-sites-images.46graus.com/files/photos/af556c41/4a303cf8-6455-461d-96f0-5ca8af212233/logo04-513x514.png" alt="Karbi">
+        <section class="section section-alt">
+            <div class="container audience-grid">
+                <div>
+                    <p class="eyebrow">Para quem é</p>
+                    <h2>Ideal para empresas e profissionais que querem sair do controle manual</h2>
+                </div>
+                <div class="audience-list">
+                    <div><strong>Pequenos negócios</strong><span>Organizar vendas, caixa, clientes, estoque e metas.</span></div>
+                    <div><strong>Gestores e analistas</strong><span>Transformar bases pesadas em indicadores claros.</span></div>
+                    <div><strong>Condomínios e prestadores</strong><span>Planilhas de controle, cobranças, orçamentos e acompanhamento.</span></div>
+                    <div><strong>Empresas em crescimento</strong><span>Criar dashboards, processos e automações para escalar.</span></div>
+                </div>
             </div>
-            <!-- Cliente 2: Bless Future Consultoria -->
-            <div class="cliente">
-                <a href="https://blessfutureconsultoria.com/" target="_blank">
-                    <img src="https://res.cloudinary.com/dakabdlip/image/upload/v1734209346/logo_bless_1_mivyuo.png" alt="Bless Future Consultoria">
-                </a>
-            </div>
-            <!-- Cliente 3: Biscoitê -->
-            <div class="cliente">
-                <a href="https://www.biscoite.com.br/" target="_blank">
-                    <img src="https://res.cloudinary.com/dakabdlip/image/upload/v1734702568/biscoite_logo_e96mcg.png" alt="Biscoitê">
-                </a>
-            </div>
-            <!-- Adicione mais clientes aqui -->
-            <!-- Exemplo: -->
-            <div class="cliente">
-                <a href="https://cliente-exemplo.com/" target="_blank">
-                    <img src="https://res.cloudinary.com/dakabdlip/image/upload/v1734208687/Imagem_do_WhatsApp_de_2024-12-13_%C3%A0_s_08.39.01_3e8fcd13_l0sbbm.jpg" alt="RXP Distribuidora">
-                </a>
-            </div>
+        </section>
 
-        </div>
-    </section>
-    <!-- Fim da Seção Clientes -->
+        <section id="skills" class="section">
+            <div class="container">
+                <div class="section-heading">
+                    <p class="eyebrow">Skills</p>
+                    <h2>Ferramentas e tecnologias que uso nos projetos</h2>
+                    <p>Combino análise de negócio, BI, banco de dados, automação e desenvolvimento para entregar soluções completas.</p>
+                </div>
 
-    <section id="contato">
-        <h2>Contato</h2>
-        <form id="form-contato" action="https://formspree.io/f/meoqwejd" method="POST" onsubmit="showConfirmation();">
-            <div>
-                <label for="nome">Nome:</label>
-                <input type="text" id="nome" name="nome" required>
+                <div class="skills-layout">
+                    <div class="skill-card">
+                        <h3>BI & Visualização</h3>
+                        <div class="tags">
+                            <span>Power BI</span><span>DAX</span><span>Power Query</span><span>KPIs</span><span>Dashboards</span><span>Storytelling com dados</span>
+                        </div>
+                    </div>
+                    <div class="skill-card">
+                        <h3>Dados & Banco</h3>
+                        <div class="tags">
+                            <span>SQL Server</span><span>Oracle SQL</span><span>Data Warehouse</span><span>Modelagem</span><span>ETL</span><span>Data Cleaning</span>
+                        </div>
+                    </div>
+                    <div class="skill-card">
+                        <h3>Automação & Python</h3>
+                        <div class="tags">
+                            <span>Python</span><span>Pandas</span><span>APIs REST</span><span>Web Scraping</span><span>VBA</span><span>Excel Avançado</span>
+                        </div>
+                    </div>
+                    <div class="skill-card">
+                        <h3>Web & Produto</h3>
+                        <div class="tags">
+                            <span>FastAPI</span><span>React</span><span>TypeScript</span><span>Supabase</span><span>Vercel</span><span>Git/GitHub</span>
+                        </div>
+                    </div>
+                </div>
             </div>
+        </section>
 
-            <div>
-                <label for="email">E-mail:</label>
-                <input type="email" id="email" name="email" required>
+        <section id="projetos" class="section section-alt">
+            <div class="container">
+                <div class="section-heading">
+                    <p class="eyebrow">Portfólio</p>
+                    <h2>Projetos e soluções que mostram minha forma de trabalhar</h2>
+                    <p>Projetos próprios e cases aplicados em BI, automação, produtos digitais e análise de dados.</p>
+                </div>
+
+                <div class="projects-grid">
+                    <article class="project-card featured-project">
+                        <div class="project-topline"><span>Produto próprio</span><span>FastAPI • React • Supabase</span></div>
+                        <h3>Scout Clubes Pro</h3>
+                        <p>Plataforma de analytics para clubes de EA FC, com login por perfil, sincronização de dados, rankings, relatórios individuais, histórico, IA para time ideal e gestão de performance.</p>
+                        <ul>
+                            <li>APIs, banco de dados, autenticação e dashboards.</li>
+                            <li>Produto publicado com foco em experiência do usuário.</li>
+                        </ul>
+                    </article>
+
+                    <article class="project-card">
+                        <div class="project-topline"><span>BI corporativo</span><span>Oracle • Power BI • Python</span></div>
+                        <h3>Dash Telecom e Forecast</h3>
+                        <p>Projeto de análise com bases grandes, pré-agregação, métricas de receita, saldo, ticket, canais, regionais, projeção MTD e acompanhamento operacional.</p>
+                    </article>
+
+                    <article class="project-card">
+                        <div class="project-topline"><span>Finanças</span><span>Next.js • Supabase</span></div>
+                        <h3>FluxoPro</h3>
+                        <p>Aplicação financeira para controle de lançamentos, visão mensal, gráficos e organização de entradas e saídas em ambiente web.</p>
+                    </article>
+
+                    <article class="project-card">
+                        <div class="project-topline"><span>Power BI</span><span>Vendas • RH • Social</span></div>
+                        <h3>Dashboards interativos</h3>
+                        <p>Painéis publicados para análise de vendas, LinkedIn e RH, com foco em leitura rápida, filtros e visualização executiva.</p>
+                    </article>
+
+                    <article class="project-card">
+                        <div class="project-topline"><span>Operação</span><span>Excel • VBA • Python</span></div>
+                        <h3>Planilhas e automações</h3>
+                        <p>Controles personalizados para reduzir tarefas repetitivas, padronizar cálculos, acompanhar indicadores e melhorar rotina operacional.</p>
+                    </article>
+
+                    <article class="project-card">
+                        <div class="project-topline"><span>Integrações</span><span>APIs • Scraping • SQL</span></div>
+                        <h3>Coleta e tratamento de dados</h3>
+                        <p>Extração de dados via API, tratamento com Python, consultas SQL e preparação de bases para relatórios e dashboards.</p>
+                    </article>
+                </div>
             </div>
+        </section>
 
-            <div>
-                <label for="mensagem">Mensagem:</label>
-                <textarea id="mensagem" name="mensagem" rows="4" required></textarea>
+        <section id="dashboard" class="section dashboard-section">
+            <div class="container">
+                <div class="section-heading">
+                    <p class="eyebrow">Demonstrações</p>
+                    <h2>Dashboards publicados em Power BI</h2>
+                    <p>Alguns exemplos visuais de análises interativas já publicadas.</p>
+                </div>
+
+                <div class="dashboard-card">
+                    <div class="dashboard-title">
+                        <h3>Análise de Vendas</h3>
+                        <p>Visão comercial com indicadores e exploração interativa.</p>
+                    </div>
+                    <iframe title="Dashboard vendas" src="https://app.powerbi.com/view?r=eyJrIjoiN2JmOTlhY2ItOThmZC00YzIyLWFkYTgtMjg2Y2IxZGZmMTE2IiwidCI6ImNmNzJlMmJkLTdhMmItNDc4My1iZGViLTM5ZDU3YjA3Zjc2ZiIsImMiOjR9" frameborder="0" allowfullscreen="true"></iframe>
+                </div>
+
+                <div class="dashboard-card">
+                    <div class="dashboard-title">
+                        <h3>Análise LinkedIn</h3>
+                        <p>Acompanhamento de crescimento, engajamento e performance de conteúdo.</p>
+                    </div>
+                    <iframe title="Dashboard LinkedIn" src="https://app.powerbi.com/view?r=eyJrIjoiMmFkMDlhZjMtMGE3Ny00ZmIxLTk3ZWUtYzQyOTg5NGU5NmU0IiwidCI6ImNmNzJlMmJkLTdhMmItNDc4My1iZGViLTM5ZDU3YjA3Zjc2ZiIsImMiOjR9" frameborder="0" allowfullscreen="true"></iframe>
+                </div>
+
+                <div class="dashboard-card">
+                    <div class="dashboard-title">
+                        <h3>Análise RH</h3>
+                        <p>Indicadores de pessoas e acompanhamento gerencial.</p>
+                    </div>
+                    <iframe title="Análise RH" src="https://app.powerbi.com/view?r=eyJrIjoiODIzMjY3ZmQtMWIxMS00ODJmLThhY2UtMTM4ZmE1YzVlN2FhIiwidCI6ImNmNzJlMmJkLTdhMmItNDc4My1iZGViLTM5ZDU3YjA3Zjc2ZiIsImMiOjR9" frameborder="0" allowfullscreen="true"></iframe>
+                </div>
             </div>
+        </section>
 
-            <button type="submit">Enviar</button>
-        </form>
+        <section class="section section-alt">
+            <div class="container process-grid">
+                <div>
+                    <p class="eyebrow">Processo</p>
+                    <h2>Como funciona a consultoria</h2>
+                    <p>Um processo simples para sair da ideia e chegar em uma entrega útil, visual e fácil de manter.</p>
+                </div>
+                <div class="steps">
+                    <div class="step"><span>01</span><strong>Diagnóstico</strong><p>Entendo o problema, a rotina atual e quais decisões precisam ser tomadas.</p></div>
+                    <div class="step"><span>02</span><strong>Organização dos dados</strong><p>Trato bases, padronizo informações, crio regras e deixo tudo confiável.</p></div>
+                    <div class="step"><span>03</span><strong>Construção da solução</strong><p>Desenvolvo dashboard, planilha, automação ou aplicação conforme a necessidade.</p></div>
+                    <div class="step"><span>04</span><strong>Entrega e orientação</strong><p>Apresento a solução, explico como usar e deixo o material pronto para operação.</p></div>
+                </div>
+            </div>
+        </section>
 
-        <div id="confirmation-message" style="display: none;">
-            <p>Aguarde, sua mensagem está sendo processada...</p>
-        </div>
-    </section>
+        <section id="sobre" class="section about-section">
+            <div class="container sobre-container">
+                <img src="https://res.cloudinary.com/dakabdlip/image/upload/v1734208687/Imagem_do_WhatsApp_de_2024-09-30_%C3%A0_s_21.28.03_28007faa_1_zlnw8i.jpg" alt="Foto de Evandro Silva Santos" class="perfil-imagem">
+                <div class="descricao">
+                    <p class="eyebrow">Sobre mim</p>
+                    <h2>Analista de dados com visão de negócio e foco em entrega prática</h2>
+                    <p>
+                        Sou Evandro Silva Santos, profissional de dados com experiência em Business Intelligence, análise, modelagem, automações e criação de dashboards. Atualmente atuo como Consultor em Análise de Dados na Claro, com passagens por MIS, BI e projetos de automação em diferentes áreas de negócio.
+                    </p>
+                    <p>
+                        Tenho formação em Gestão Empresarial pela FATEC e MBA em Data Science and Analytics pela USP Esalq. Trabalho com Power BI, SQL, Excel, VBA, Python, APIs, Web Scraping, ETL, modelagem de dados e desenvolvimento de soluções web orientadas a dados.
+                    </p>
+
+                    <div class="social-links" aria-label="Redes sociais">
+                        <a href="https://www.linkedin.com/in/evandro-silva-santos-256775196/" target="_blank" rel="noopener">LinkedIn</a>
+                        <a href="https://github.com/Evandrowisky" target="_blank" rel="noopener">GitHub</a>
+                        <a href="https://wa.me/5512997383529" target="_blank" rel="noopener">WhatsApp</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="clientes" class="section clients-section">
+            <div class="container">
+                <div class="section-heading">
+                    <p class="eyebrow">Clientes e parceiros</p>
+                    <h2>Marcas e projetos atendidos</h2>
+                </div>
+
+                <div class="clientes-container">
+                    <div class="cliente">
+                        <img src="https://cdn-sites-images.46graus.com/files/photos/af556c41/4a303cf8-6455-461d-96f0-5ca8af212233/logo04-513x514.png" alt="Karbi">
+                    </div>
+                    <div class="cliente">
+                        <a href="https://blessfutureconsultoria.com/" target="_blank" rel="noopener">
+                            <img src="https://res.cloudinary.com/dakabdlip/image/upload/v1734209346/logo_bless_1_mivyuo.png" alt="Bless Future Consultoria">
+                        </a>
+                    </div>
+                    <div class="cliente">
+                        <a href="https://www.biscoite.com.br/" target="_blank" rel="noopener">
+                            <img src="https://res.cloudinary.com/dakabdlip/image/upload/v1734702568/biscoite_logo_e96mcg.png" alt="Biscoitê">
+                        </a>
+                    </div>
+                    <div class="cliente">
+                        <img src="https://res.cloudinary.com/dakabdlip/image/upload/v1734208687/Imagem_do_WhatsApp_de_2024-12-13_%C3%A0_s_08.39.01_3e8fcd13_l0sbbm.jpg" alt="RXP Distribuidora">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contato" class="section contact-section">
+            <div class="container contact-grid">
+                <div>
+                    <p class="eyebrow">Contato</p>
+                    <h2>Vamos transformar seus dados em uma solução profissional?</h2>
+                    <p>Me conte o que você precisa organizar, automatizar ou acompanhar. Posso te ajudar com dashboard, planilha, automação, banco de dados ou aplicação web.</p>
+                    <a href="https://wa.me/5512997383529?text=Ol%C3%A1%2C%20Evandro!%20Tenho%20interesse%20em%20uma%20consultoria%20em%20dados." class="btn btn-primary" target="_blank" rel="noopener">Chamar no WhatsApp</a>
+                </div>
+
+                <form id="form-contato" action="https://formspree.io/f/meoqwejd" method="POST" onsubmit="showConfirmation();">
+                    <input type="hidden" name="_subject" value="Novo contato pelo site de consultoria de dados">
+                    <div>
+                        <label for="nome">Nome</label>
+                        <input type="text" id="nome" name="nome" placeholder="Seu nome" required>
+                    </div>
+
+                    <div>
+                        <label for="email">E-mail</label>
+                        <input type="email" id="email" name="email" placeholder="seuemail@exemplo.com" required>
+                    </div>
+
+                    <div>
+                        <label for="mensagem">Mensagem</label>
+                        <textarea id="mensagem" name="mensagem" rows="5" placeholder="Descreva rapidamente o que você precisa" required></textarea>
+                    </div>
+
+                    <button type="submit">Enviar mensagem</button>
+                    <div id="confirmation-message" role="status" aria-live="polite">
+                        <p>Mensagem sendo enviada. Obrigado pelo contato!</p>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
 
     <footer>
-        <p>&copy; 2024 Evandro Silva Santos. Todos os direitos reservados.</p>
+        <div class="container footer-content">
+            <p>&copy; 2026 Evandro Silva Santos. Todos os direitos reservados.</p>
+            <a href="#home">Voltar ao topo</a>
+        </div>
     </footer>
 
     <script>
-        // Função para mostrar a mensagem de aguardo
         function showConfirmation() {
-            // Exibe a mensagem de aguardo
-            document.getElementById("confirmation-message").style.display = "block";
+            document.getElementById('confirmation-message').style.display = 'block';
         }
 
-        // Seleciona os elementos do DOM
         const mobileMenu = document.querySelector('.mobile-menu');
         const navList = document.querySelector('.nav-list');
+        const navLinks = document.querySelectorAll('.nav-list a');
 
-        // Adiciona o evento de clique
         mobileMenu.addEventListener('click', () => {
             navList.classList.toggle('active');
             mobileMenu.classList.toggle('active');
         });
 
+        navLinks.forEach((link) => {
+            link.addEventListener('click', () => {
+                navList.classList.remove('active');
+                mobileMenu.classList.remove('active');
+            });
+        });
     </script>
-
 </body>
 </html>
