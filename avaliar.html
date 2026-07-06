@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Avalie O Cientista dos Dados com estrelas e comentário.">
+    <meta name="theme-color" content="#08111f">
+    <title>Avaliar | O Cientista dos Dados</title>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-3V0G42NBNT"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-3V0G42NBNT');
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="site-features.css">
+</head>
+<body>
+    <div class="background-glow" aria-hidden="true"></div>
+
+    <header class="site-header">
+        <div class="container header-content">
+            <a class="brand" href="index.html#home" aria-label="Voltar para o início">
+                <span class="brand-mark" aria-hidden="true">CD</span>
+                <span class="brand-text"><strong>O Cientista dos Dados</strong><small>Avaliação de cliente</small></span>
+            </a>
+            <nav aria-label="Menu principal">
+                <ul class="nav-list">
+                    <li><a href="index.html#reviews">Ver reviews</a></li>
+                    <li><a href="index.html#contato" class="nav-cta">Orçamento</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="section reviews-section soft-section">
+            <div class="container review-summary-grid">
+                <div>
+                    <span class="kicker">Avaliação</span>
+                    <h1>Deixe seu review sobre o projeto.</h1>
+                    <p>Obrigado por avaliar meu trabalho. Seu comentário ajuda a mostrar confiança para novos clientes. A avaliação passa por moderação antes de aparecer publicamente no site.</p>
+                    <a href="index.html#reviews" class="btn btn-secondary">Voltar para os reviews</a>
+                </div>
+
+                <form id="review-form" class="review-form-card" action="https://formspree.io/f/meoqwejd" method="POST">
+                    <input type="hidden" name="_subject" value="Novo review pelo site O Cientista dos Dados">
+                    <h3>Avalie com estrelas</h3>
+                    <p>Preencha nome, tipo de projeto, nota e comentário.</p>
+
+                    <div>
+                        <label for="review-nome">Nome</label>
+                        <input type="text" id="review-nome" name="nome" placeholder="Seu nome" required>
+                    </div>
+
+                    <div>
+                        <label for="review-empresa">Empresa ou projeto</label>
+                        <input type="text" id="review-empresa" name="empresa" placeholder="Ex: dashboard financeiro, planilha de vendas" required>
+                    </div>
+
+                    <div>
+                        <label>Nota</label>
+                        <div class="rating-input">
+                            <label><input type="radio" name="nota" value="1" required>★</label>
+                            <label><input type="radio" name="nota" value="2">★★</label>
+                            <label><input type="radio" name="nota" value="3">★★★</label>
+                            <label><input type="radio" name="nota" value="4">★★★★</label>
+                            <label><input type="radio" name="nota" value="5">★★★★★</label>
+                        </div>
+                    </div>
+
+                    <div>
+                        <label for="review-servico">Serviço</label>
+                        <select id="review-servico" name="servico" required>
+                            <option value="">Selecione</option>
+                            <option>Planilha personalizada</option>
+                            <option>Dashboard Power BI</option>
+                            <option>Automação</option>
+                            <option>Consultoria de dados</option>
+                            <option>Sistema ou produto de dados</option>
+                        </select>
+                    </div>
+
+                    <div>
+                        <label for="review-comentario">Comentário</label>
+                        <textarea id="review-comentario" name="comentario" rows="5" placeholder="Conte como foi a experiência" required></textarea>
+                    </div>
+
+                    <button type="submit">Enviar avaliação</button>
+                    <div id="review-confirmation-message" role="status" aria-live="polite"><p>Avaliação enviada para moderação. Obrigado!</p></div>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container footer-content"><p>&copy; 2026 O Cientista dos Dados — Evandro Silva Santos.</p><a href="index.html#home">Voltar ao site</a></div>
+    </footer>
+
+    <script src="site-features.js"></script>
+</body>
+</html>
