@@ -1,0 +1,358 @@
+/* Ajustes finais para landing de divulgacao: leve, direta e sem fonte gigante */
+
+body {
+    font-size: 15px;
+}
+
+.site-header .top-bar {
+    display: none;
+}
+
+.header-content {
+    min-height: 64px;
+}
+
+.brand-mark {
+    width: 40px;
+    height: 40px;
+    border-radius: 14px;
+    font-size: 0.88rem;
+}
+
+.brand-text strong {
+    font-size: 0.95rem;
+}
+
+.brand-text small {
+    font-size: 0.72rem;
+}
+
+.nav-list a {
+    min-height: 34px;
+    padding: 0 10px;
+    font-size: 0.84rem;
+}
+
+.hero.compact-hero {
+    min-height: auto;
+    padding: 52px 0 46px;
+}
+
+.hero-grid,
+.split-grid,
+.contact-grid {
+    gap: 28px;
+}
+
+.hero-badge,
+.kicker,
+.project-label {
+    min-height: 28px;
+    padding: 0 9px;
+    font-size: 0.66rem;
+    letter-spacing: 0.06em;
+}
+
+.brand-kicker {
+    margin: 14px 0 8px;
+    font-size: clamp(0.98rem, 1.7vw, 1.25rem);
+}
+
+.hero h1 {
+    max-width: 620px;
+    margin-bottom: 14px;
+    font-size: clamp(1.85rem, 3.9vw, 3.25rem);
+    line-height: 1.08;
+    letter-spacing: -0.045em;
+}
+
+.hero-description {
+    max-width: 560px;
+    font-size: clamp(0.94rem, 1.25vw, 1.02rem);
+}
+
+.hero-actions {
+    margin-top: 20px;
+    gap: 10px;
+}
+
+.btn {
+    min-height: 42px;
+    padding: 0 16px;
+    font-size: 0.88rem;
+}
+
+.trust-row.compact-trust {
+    grid-template-columns: repeat(3, 1fr);
+    margin-top: 22px;
+    gap: 9px;
+}
+
+.trust-row.compact-trust div {
+    padding: 12px;
+    border-radius: 14px;
+}
+
+.trust-row.compact-trust strong {
+    font-size: 0.86rem;
+}
+
+.trust-row.compact-trust span {
+    font-size: 0.76rem;
+}
+
+.hero-showcase.compact-showcase {
+    padding: 12px;
+    border-radius: 22px;
+}
+
+.compact-showcase .preview-card {
+    padding: 16px;
+    border-radius: 18px;
+}
+
+.compact-showcase .preview-header strong {
+    margin-top: 4px;
+    font-size: clamp(1.1rem, 2.5vw, 1.55rem);
+    line-height: 1.1;
+    letter-spacing: -0.04em;
+}
+
+.mini-solution-list {
+    display: grid;
+    gap: 8px;
+    margin-top: 14px;
+}
+
+.mini-solution-list div {
+    padding: 11px;
+    border-radius: 13px;
+    background: #eef5ff;
+    border: 1px solid #d8e8fb;
+}
+
+.mini-solution-list strong,
+.mini-solution-list span {
+    display: block;
+}
+
+.mini-solution-list strong {
+    font-size: 0.9rem;
+}
+
+.mini-solution-list span {
+    color: var(--muted);
+    font-size: 0.82rem;
+}
+
+.section {
+    padding: 46px 0;
+}
+
+.section-heading {
+    max-width: 650px;
+    margin-bottom: 24px;
+}
+
+.section-heading h2,
+.split-grid h2,
+.contact-grid h2 {
+    font-size: clamp(1.45rem, 3vw, 2.25rem);
+    line-height: 1.12;
+    letter-spacing: -0.035em;
+}
+
+.section-heading p,
+.split-grid p,
+.contact-grid p {
+    font-size: 0.94rem;
+}
+
+.compact-cards,
+.solutions-grid,
+.projects-grid {
+    gap: 12px;
+}
+
+.solution-card,
+.projects-grid article,
+.pain-grid article,
+.method-grid article,
+.spreadsheet-types article {
+    padding: 17px;
+    border-radius: 18px;
+}
+
+.solution-card h3,
+.projects-grid h3 {
+    font-size: 0.98rem;
+}
+
+.solution-card p,
+.projects-grid p {
+    font-size: 0.88rem;
+}
+
+.solution-card > span,
+.projects-grid article > span {
+    min-width: 30px;
+    height: 30px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    font-size: 0.75rem;
+}
+
+.compact-split {
+    align-items: center;
+}
+
+.compact-sheet {
+    padding: 15px;
+    border-radius: 20px;
+}
+
+.sheet-row {
+    padding: 9px 10px;
+    font-size: 0.82rem;
+}
+
+.project-spotlight.compact-spotlight {
+    grid-template-columns: 1.1fr 0.75fr;
+    gap: 18px;
+    padding: 22px;
+    border-radius: 22px;
+}
+
+.project-spotlight.compact-spotlight h3 {
+    font-size: clamp(1.45rem, 3.4vw, 2.35rem);
+    line-height: 1.05;
+}
+
+.project-spotlight.compact-spotlight p {
+    font-size: 0.92rem;
+}
+
+.tags span {
+    min-height: 28px;
+    padding: 0 9px;
+    font-size: 0.76rem;
+}
+
+.product-mock {
+    padding: 15px;
+    border-radius: 18px;
+}
+
+.mock-grid {
+    gap: 8px;
+}
+
+.mock-grid div {
+    padding: 10px;
+    border-radius: 12px;
+}
+
+.mock-grid b {
+    font-size: 1.05rem;
+}
+
+form {
+    padding: 18px;
+    border-radius: 18px;
+}
+
+label {
+    font-size: 0.88rem;
+}
+
+input,
+textarea,
+select {
+    padding: 10px 12px;
+    font-size: 0.9rem;
+}
+
+.contact-highlights {
+    margin: 14px 0;
+}
+
+.contact-highlights span {
+    min-height: 30px;
+    padding: 0 10px;
+    font-size: 0.78rem;
+}
+
+.sticky-whatsapp {
+    min-height: 42px;
+    padding: 0 15px;
+    font-size: 0.86rem;
+}
+
+.footer-content {
+    font-size: 0.86rem;
+}
+
+@media (max-width: 1100px) {
+    .hero-grid,
+    .split-grid,
+    .contact-grid,
+    .project-spotlight.compact-spotlight {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 760px) {
+    .brand-text strong {
+        font-size: 0.84rem;
+    }
+
+    .brand-text small {
+        display: none;
+    }
+
+    .brand-mark {
+        width: 38px;
+        height: 38px;
+    }
+
+    .hero.compact-hero {
+        padding: 34px 0 38px;
+    }
+
+    .hero h1 {
+        font-size: clamp(1.75rem, 8.4vw, 2.45rem);
+    }
+
+    .hero-description {
+        font-size: 0.93rem;
+    }
+
+    .trust-row.compact-trust {
+        grid-template-columns: 1fr;
+    }
+
+    .section {
+        padding: 38px 0;
+    }
+
+    .section-heading h2,
+    .split-grid h2,
+    .contact-grid h2 {
+        font-size: clamp(1.45rem, 7vw, 2rem);
+    }
+
+    .solutions-grid,
+    .projects-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .hero-showcase.compact-showcase {
+        display: none;
+    }
+
+    .sticky-whatsapp {
+        left: 14px;
+        right: 14px;
+        bottom: 12px;
+    }
+}
